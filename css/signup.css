@@ -1,0 +1,177 @@
+:root {
+  --primary-color: yellow;
+  --secondary-color: red;
+}
+html {
+  scroll-behavior: smooth;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+
+  --webkit-font-smoothing: antialiased;
+  overflow-x: hidden;
+  background: #001;
+  color: yellow;
+}
+
+.wrapper {
+  width: 100%;
+  height: 100vh;
+  position: relative;
+  background: url("../img/back.jpg") no-repeat center center/cover;
+}
+
+.wrapper::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  background: rgba(0, 0, 0, 0.6);
+  box-shadow: insert 120px 100px 250px #000000,
+    insert -120px -100px 250px #000000;
+}
+
+.header {
+  position: relative;
+  height: 90px;
+  z-index: 2;
+}
+
+img {
+  width: 100%;
+}
+.logo img {
+  width: 200px;
+  position: absolute;
+  top: 60%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.login__body {
+  padding: 60px;
+  z-index: 2;
+  position: relative;
+  max-width: 450px;
+  height: 530px;
+  margin-left: 50%;
+  margin-top: 5%;
+  background-color: rgba(0, 0, 0, 0.75);
+  border-radius: 10px;
+  box-sizing: border-box;
+  transform: translateX(-50%);
+}
+
+.login__body h2 {
+  font-size: 40px;
+  color: yellow;
+  margin-top: 0;
+  padding-bottom: 20px;
+}
+
+.login__body input {
+  height: 50px;
+  width: 100%;
+  border-radius: 3px;
+  color: #fff;
+  background-color: #333;
+  border: 1px solid #333;
+  padding-left: 15px;
+  box-sizing: border-box;
+  outline: none;
+}
+
+.input__wrap {
+  margin-bottom: 25px;
+}
+
+.login__body .input__wrap button {
+  height: 50px;
+  width: 100%;
+  color: #fff;
+  background: #e50914;
+  border-radius: 3px;
+  font-weight: 500;
+  font-size: 18px;
+  border: 1px solid red;
+}
+
+.support {
+  display: flex;
+  color: #fff;
+  justify-content: space-between;
+  font-size: 12px;
+}
+
+.support input {
+  width: 15px;
+  height: 15px;
+}
+
+.login__body .need__help a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 14px;
+}
+.login__body .need__help a:hover {
+  opacity: 0.7;
+}
+
+.remember {
+  display: flex;
+  align-items: center;
+}
+
+.remember span {
+  margin-right: 10px;
+  height: 25px;
+  font-size: 16px;
+}
+
+.sign__up {
+  color: #737373;
+  font-size: 18px;
+  margin-top: 10px;
+}
+.sign__up a {
+  text-decoration: none;
+  color: #fff;
+}
+
+.sign__up a:hover {
+  opacity: 0.8;
+}
+
+.btn:hover {
+  opacity: 0.9;
+}
+
+.contact {
+  padding: 10px;
+  display: flex;
+  position: relative;
+  justify-content: center;
+  align-items: center;
+  height: 5vh;
+  background-color: #000000;
+
+  /* pop-up text arrow */
+  /* text pops up when icon is in hover state */
+}
+
+.contact a {
+  font-size: 20px;
+  margin: 70px;
+  font-family: sans-serif;
+  color: red;
+}

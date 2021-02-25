@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/login.css" />
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" />
+    <title>Recafilm | Your Personalized Movie Engine</title>
+    <script src="../js/script.js"></script>
+</head>
+<body>
+    <div class="wrapper">
+        <div class="header">
+            <div class="logo">
+                <img src="../img/logo.png" alt="Recafilm">
+            </div>
+        </div>
+        <div class="login__body">
+            <div class="login__box">
+                <h2>Sign Up</h2>
+                <form id="signup-form">
+                    <div class="input__wrap" name=>
+                        <input type="text" placeholder="Email" id ='signup-email'>
+                    </div>
+                    <div class="input__wrap">
+                        <input type="password" placeholder="Password" id='signup-password' name="password" onkeyup='check();'>
+                    </div>
+                    <div class="input__wrap">
+                        <input type="password" placeholder="Confirm Password" name="text1" id="confirm_password"  onkeyup='check();'>
+                        <span id='message'></span>
+                    </div>
+                    <div class="input__wrap">
+                        <button class="btn btn-rounded" id='btn-signUp'>Sign Up</button>
+                    </div>
+                    <div class="support">
+                        <!-- <div class="remember">
+                            <span><input type="checkbox"></span>
+                            <span>Remember Me</span>
+                        </div> -->
+                        <div class="need__help">
+                            <a href="#">Need Help?</a>
+                        </div>
+                    </div>
+                    <div class="login__footer">
+                        <div class="sign__up">
+                            <p>Already have an account? <a href="login.html"> Sign in </a></p>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <!-- Importing script.js for checking password -->
+    <script src="../js/script.js"></script>
+
+
+    <!-- Firebase Authentication -->
+    <script src="https://www.gstatic.com/firebasejs/8.2.7/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.2.7/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.2.7/firebase-database.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.2.7/firebase-storage.js"></script>
+    <script>
+        // Your web app's Firebase configuration
+        // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+        var firebaseConfig = {
+          apiKey: "AIzaSyCEFL0UCNLOLjNCk201vwBaPOL870sxHW8",
+          authDomain: "recafilm-3311.firebaseapp.com",
+          projectId: "recafilm-3311",
+          storageBucket: "recafilm-3311.appspot.com",
+          messagingSenderId: "535917599165",
+          appId: "1:535917599165:web:261c5822ac12780fa8dad4",
+          measurementId: "G-YKHJJGBZLX"
+        };
+        // Initialize Firebase
+        firebase.initializeApp(firebaseConfig);
+        
+        //make auth and firestore references
+        const auth = firebase.auth();
+
+      </script>
+    <script src="../js/signup.js"></script>
+</body>
+</html>

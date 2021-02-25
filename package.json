@@ -1,0 +1,22 @@
+{
+  "name": "netflix",
+  "version": "1.0.0",
+  "description": "recommendation engine",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/utsavneutron/Recafilm.git"
+  },
+  "author": "Utsav Shrestha",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/utsavneutron/Recafilm/issues"
+  },
+  "homepage": "https://github.com/utsavneutron/Recafilm#readme",
+  "dependencies": {
+    "firebase": "^8.2.9"
+  }
+}
