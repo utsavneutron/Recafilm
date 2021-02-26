@@ -1,4 +1,4 @@
-# Helpful Tutorial for anyone getting started with github
+# Helpful Tutorial for anyone who wants to learn about RECAFILM
 
 ### You'll need VLC player to run the videos.
 
