@@ -1,2 +1,21 @@
-# Movie
-Movie Recommendation App
+# Recafilm - Movie Recommendation Engine
+---------------------------------------------------------------------------------------------------------------------------------------------
+
+### What is a Recommendation Engine?
+__A Recommendation system is an algorithm aimed at suggesting relevant data to a user based on past preferences or ratings given by the user or suggesting relevant data to a user based on the item’s attributes.__
+
+### Objective Vision :
+Recafilm is a movie recommendation program that utilizes user data to match and recommend
+the user with movies and films that it thinks the user will enjoy. This will not be a streaming
+service, but purely used for recommendations and suggestions based on the user and movie data.
+The program will use a login system with personalized user accounts, as well as an API for its
+movie database. The user will also be able to change or edit their movie preferences as they
+choose, so that the program will suggest different movies based on the selections.
+
+
+### The repository for the Recafilm-api is https://github.com/utsavneutron/recafilm-engine
+For the dataset,TMDB API was used and made into a csv file. And A recommendation engine was created that suggests movies based on movie selection.
+__An object was made for CountVectorizer and initiate to remove English stopwords using the stop_words parameter. Then, CountVectorizer object was fit to count onto the value returned by combine_data() i.e. combined column values of cast and genres. After this,a sparse matrix as shown in our discussion about Bag-of-Words appeared with the count values of each word. After that, an object was made for TfidfVectorizer and initiated to remove English stopwords using the stop_words parameter.__
+
+## The recommendation algorithm is uploaded to Heroku: https://recafilm-api.herokuapp.com/movie?title=
+__Copy and paste it to Postman to get the results.__ The API is fully working.
