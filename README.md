@@ -15,6 +15,7 @@ choose, so that the program will suggest different movies based on the selection
 
 ### The repository for the Recafilm-api is https://github.com/utsavneutron/recafilm-engine
 For the dataset,TMDB API was used and made into a csv file. And A recommendation engine was created that suggests movies based on movie selection.
+
 __An object was made for CountVectorizer and initiate to remove English stopwords using the stop_words parameter. Then, CountVectorizer object was fit to count onto the value returned by combine_data() i.e. combined column values of cast and genres. After this,a sparse matrix as shown in our discussion about Bag-of-Words appeared with the count values of each word. After that, an object was made for TfidfVectorizer and initiated to remove English stopwords using the stop_words parameter.__
 
 ## The recommendation algorithm is uploaded to Heroku: https://recafilm-api.herokuapp.com/movie?title=
