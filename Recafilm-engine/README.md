@@ -5,14 +5,13 @@
  
  __An object was made for CountVectorizer and initiate to remove English stopwords using the stop_words parameter. Then, CountVectorizer object was fit to count onto the value returned by combine_data() i.e. combined column values of cast and genres. After this,a sparse matrix as shown in our discussion about Bag-of-Words appeared with the count values of each word. After that, an object was made for TfidfVectorizer and initiated to remove English stopwords using the stop_words parameter.__
 
-## Requirements
+## Infrastructures used:
 
 * [Python 2.7](https://www.python.org/download/releases/2.7/) or [Python 3.6](https://www.python.org/downloads/release/python-360/)
 * [Jupyter Notebook](http://jupyter.org/)
 
-## Dependencies
+## Dependencies:
 
-Choose the latest versions of any of the dependencies below:
 * [pandas](https://pandas.pydata.org/)
 * [numpy](http://www.numpy.org/)
 * [scipy](https://www.scipy.org/)
