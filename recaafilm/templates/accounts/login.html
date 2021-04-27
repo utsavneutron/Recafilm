@@ -1,0 +1,66 @@
+{%load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static '/css/login.css' %}" />
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" />
+    <title>Recafilm | Your Personalized Movie Engine</title>
+    
+</head>
+<body>
+    <div class="wrapper">
+        <div class="header">
+            <div class="logo">
+                <a href="/"><img src="{% static '/img/logo.png' %}" alt="Recafilm"></a>
+            </div>
+        </div>
+        <div class="login__body">
+            <div class="login__box">
+                <h2>Sign in</h2>
+                <form id="login-form" name='form1' method="POST" action="">
+                    {% csrf_token %}
+                    <div class="input__wrap">
+                        <input type="text" placeholder="Username" name="username" class="form-control">
+                    </div>
+                    <div class="input__wrap">
+                        <input type="password" name="password" placeholder="Password", class="form-control">
+                    </div>
+                    <div class="input__wrap">
+                        <button class="btn btn-rounded" type="submit">Sign In</button>
+                    </div>
+                    <div class="support">
+                        <div class="remember">
+                            <span><input type="checkbox"></span>
+                            <span>Remember Me</span>
+                        </div>
+                        <div class="need__help">
+                            <a href="/reset_password/">Need Help?</a>
+                        </div>
+                    </div>
+                </form>
+                {{form.errors}}
+                {% for message in messages %}
+                    <p id="messages">{{message}}</p>
+                {% endfor %}
+                    <div class="login__footer">
+                        <div class="sign__up">
+                            <p>New to Recafilm? <a href="/signup/"> Sign up now. </a></p>
+                        </div>
+                    </div>
+
+            </div>
+        </div>
+    </div>
+    
+    <!-- <section class='contact'>
+        <a href="#">About Us </a>
+        <a href="#">Contact</a>
+        <a href="#">Privacy</a> -->
+
+    <!-- <script src="{% static '/js/login.js' %}"></script> -->
+</body>
+</html>

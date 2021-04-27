@@ -1,0 +1,55 @@
+{%load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="{% static '/css/home.css' %}" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome</title>
+</head>
+<body>
+    <div class="showcase">
+        <div class="showcase-top">
+            <img src="{% static '/img/logo.png' %}" alt="Recafilm">
+            <a href="/edituser/"><span class="hello-msg"> {{request.user}}</span> </a>
+            <a href="/logout/" class ="btn btn-rounded" id='logout'>Sign Out</a>
+        </div>
+    
+        <div class="rec_body">
+            <div class="rec_box">
+                <h2>Enter your Choice</h2>
+                <form id="searchForm">
+                    <input type=search name="movie" placeholder="Enter Movie Name" id="movie">
+                    <button class="btn btn-xl" id="search">Search</button>
+                </form>
+            </div>
+        </div>
+        <div class="result" id="res_box" style="visibility:hidden">
+            <div class="result-box">
+                <h2>Your Recommendations are:</h2>
+                <table id="gitTable" style="table-layout: fixed ; width: 100%; height: 100%">
+                    <thead>
+                      <tr>
+                        <th>Name</th>
+                        <th>Genres</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                        <tr id="trow"></tr>
+                    </tbody>
+                </table>
+                <div id="myData"></div>
+                <img id="loading" src="{% static '/img/g.gif' %}" style="visibility:hidden" >
+                <!-- <textarea readonly id="output" rows=10 placeholder="Results appear here"></textarea> -->
+            </div>
+
+        </div>
+    
+    </div>
+
+    <script src="{% static '/js/home.js' %}"></script>
+</body>
+
+</html>
