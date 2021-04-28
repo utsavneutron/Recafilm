@@ -26,7 +26,7 @@ SECRET_KEY = '54ap0f_9g59@(u#&nv&a_&#jh%#=xu@c!01qg=_xi_$hpqmtlq'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['recafilm.herokuapp.com', '127.0.0.1']
 
 
 # Application definition
