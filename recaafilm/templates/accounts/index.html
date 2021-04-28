@@ -1,0 +1,64 @@
+{%load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static '/css/style.css' %}" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" />
+    <title>Recafilm | Your Personalized Movie Engine</title>
+</head>
+<body>
+    <header class="showcase">
+        <div class="showcase-top">
+            <img src="{% static '/img/logo.png' %}" alt="Recafilm">
+            <a href="/login/" class ="btn btn-rounded">Sign in</a>
+        
+        </div>
+        <div class="showcase-content">
+            <h1>Find your Pick!</h1>
+            <p> Experience the best movie recommendations</p>
+            <a href="/signup/" class="btn btn-lg">
+                Sign up. Get your Movie fix! <i class="fas fa-chevron-right btn-icon"></i>
+            </a>
+        </div>    
+    </header>
+
+    <section class = 'tabs'>
+        <div class = "container">
+            <div class="panel active" style="background-image: url('{% static '/img/1.jpg' %}')">
+                <h1>Hassle-Free</h1>
+                <h3>Find your next movie wherever you are</h3>
+            </div>
+            <div class="panel" style="background-image: url('{% static '/img/2.jpg' %}')">
+                <h1>Kids-Friendly</h1>
+                <h3>Recommendations based on PG-ratings</h3>
+            </div>
+            <div class="panel" style="background-image: url('{% static '/img/3.jpg' %}')">
+                <h1>Easy to choose</h1>
+                <h3>Filter through thousands of movies</h3>
+            </div>
+            <div class="panel" style="background-image: url('{% static '/img/4.jpg' %}')">
+                <h1>Fun for the family</h1>
+                <h3>Suggestions tailored to your taste</h3>
+            </div>
+            <div class="panel" style="background-image: url('{% static '/img/5.jpg' %}')">
+                <h1>Track your watch</h1>
+                <h3>Keep log of what you've watched</h3>
+            </div>
+    
+        </div>
+    
+    </section>
+    <section class='contact'>
+        <a href="#">About Us </a>
+        <a href="#">Contact</a>
+        <a href="#">Privacy</a>
+
+    </section>
+    
+    <script src="{% static '/js/script.js' %}"></script>
+    
+</body>
+</html>
