@@ -34,7 +34,7 @@ searchForm.addEventListener('submit', (e) =>{
     search();
     function appendData(data) {
         var mainContainer = document.querySelector('#gitTable tbody');
-        for (var i = 0; i < 10; i++) {
+        for (var i = 0; i < 5; i++) {
             var tr = document.createElement("tr");
             tr.innerHTML = rowHtml(data[i]);
             // var td2 = document.createElement("td");
