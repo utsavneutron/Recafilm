@@ -129,7 +129,7 @@ p {
   z-index: 2;
   position: relative;
   max-width: 500px;
-  height: 350px;
+  height: 370px;
   margin-left: 50%;
   margin-top: 2%;
   background-color: rgba(0, 0, 0, 0.75);
@@ -144,6 +144,8 @@ p {
   margin-top: 0;
   padding-bottom: 20px;
   text-align: center;
+  border-collapse: separate;
+  border-spacing: 0 25px;
 }
 
 .result-box img {
@@ -169,7 +171,9 @@ p {
 }
 
 .result-box td {
-  padding: 1px;
+  border: 1px solid #f9f9f9;
+  border-collapse: collapse;
+  padding: 5px;
 }
 
 .btn {
