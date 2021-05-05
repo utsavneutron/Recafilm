@@ -1,4 +1,5 @@
 # Recafilm - Movie Recommendation Engine
+https://wakatime.com/badge/github/utsavneutron/Recafilm.svg
 ---------------------------------------------------------------------------------------------------------------------------------------------
 
 ### What is a Recommendation Engine?
